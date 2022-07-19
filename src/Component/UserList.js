@@ -20,18 +20,16 @@ const UserList = () => {
 
   const Card = (item, index) => {
     return (
-      <div className="d-flex flex-wrap flex-row">
+      <div className="d-flex flex-wrap flex-row" key={item.login.uuid}>
         <div
           style={{ fontSize: "1rem", width: "15vw", padding: "1rem" }}
           className="card m-5"
-          key={index}
         >
           <img
             alt="Image"
             className="card-image-top card-header"
             src={item.picture.large}
-            width="200"
-            height="150px"
+
           />
           <div className="card-body">
             <p>
