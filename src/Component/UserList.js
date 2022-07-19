@@ -18,7 +18,7 @@ const UserList = () => {
     userData();
   }, []);
 
-  const Card = (item, index) => {
+  const Card = (item) => {
     return (
       <div className="d-flex flex-wrap flex-row" key={item.login.uuid}>
         <div
